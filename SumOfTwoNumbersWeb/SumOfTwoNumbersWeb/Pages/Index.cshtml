@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <form method="post">
+        <h1 class="display-4">Sum of two numbers</h1>
+        <div class="container mt-3">
+            <input asp-for="A" type="text" placeholder="a: " size="2" /> + 
+            <input asp-for="B" type="text" placeholder="b: " size="2" /> = 
+            <input asp-for="C" type="text" size="2" disabled/>
+        </div>
+        <div class="container mt-3">
+            <button id="calc" type="submit">Calculate sum</button>
+        </div>
+    </form>
+    
+</div>
